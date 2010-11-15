@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="./user-guide.css" />
+	<title>Cutupsampler documentation</title>
+</head>
+
+<body>
+
+<header>
+	<hgroup>
+		<h1>Cutupsampler documentation</h1>
+		<h2>Overview</h2>
+	</hgroup>
+</header>
+
+<p>Cutupsampler is a program for Mac OS X that performs a cut-up of
+a sound file and maps the various cuts to keys on a MIDI keyboard or
+computer keyboard.</p>
+
+
+<article>
+
+	<header>
+		<h1>Quick start</h1>
+	</header>
+
+	<ol>
+		<li><em>If</em> you're using a MIDI controller (e.g. keyboard or
+		other such device):
+		<ol>
+			<li>Select an appropriate device from the "MIDI dev" menu.</li>
+			<li>Select the MIDI channel on which the device will be
+			transmitting, from the "MIDI ch" box.</li>
+			<li>Adjust "# keys" to cut the audio sample file up into more or
+			fewer chunks. each chunk will be mapped to a key/note of the MIDI
+			controller. Adjust "low key" to define the key to use as the start of
+			the total, overall sample.</li>
+		</ol>
+		</li>
+		<li><em>If</em> you want to use the computer keyboard:
+		<ol>
+			<li>In the "controller" panel, select "computer kbd".</li>
+		</ol>
+		</li>
+		<li>Select an appropriate audio output device from the "audio out"
+		box.</li>
+		<li>Click "load sound file" and select a WAV or AIFF audio file.
+		If the file is monophonic, check the "file is mono" box.</li>
+		<li>Play!</li>
+	</ol>
+
+</article>
+
+
+<article>
+
+	<header>
+		<h1>MIDI control</h1>
+	</header>
+
+</article>
+
+
+<article>
+
+	<header>
+		<h1>Computer keyboard control</h1>
+	</header>
+	
+	<p>The computer keyboard does not attempt to emulate a clavier
+	keyboard; in other words, there are no black and white keys.</p>
+	
+	<p>"Low key" box becomes irrelevant and is disabled. Use the "#
+	keys" box to control the number of computer-keyboard keys into which the
+	sound sample is divided. The number of active keys are counted from the
+	top-left alphabetic key, going across and then down.</p>
+
+</article>
+
+
+<article>
+
+	<header>
+		<h1>Known issues</h1>
+	</header>
+
+	<p>Dragging mouse in dial while using the computer keyboard. Use
+	space key to stop all held notes.</p>
+	
+	<p>Computer keyboard only allows 6 notes at once. Not sure if this
+	is the keyboard's circuitry or OS X, but that's the way it is.</p>
+
+</article>
+
+</body>
+</html>

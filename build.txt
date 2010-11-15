@@ -1,0 +1,2 @@
+open thispatcher
+appicon FULL_PATH_TO/Cutupsampler/cutupsampler.icns

@@ -1,0 +1,21 @@
+
+body {
+	font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;
+	padding: 0;
+	margin:0 auto;
+	width:40em;
+	line-height:1.25;
+	word-spacing:0.1em;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+article h1 {
+	font-size: 18px;
+}
