@@ -1,2 +1,3 @@
 open thispatcher
-appicon FULL_PATH_TO/Cutupsampler/cutupsampler.icns
+include FULL_PATH_TO/Cutupsampler/onoff_button.png
+appicon FULL_PATH_TO/Cutupsampler/cutupsampler.icns
