@@ -9,6 +9,14 @@ your Max/MSP search path.  As of version 1.0, this is included in the
 source zip file.
 
 
+Build script
+------------
+
+The file build.txt should be loaded when building the application.
+Edit the file paths so that they contain the full paths to the referenced
+files on your system.
+
+
 Building as a standalone
 ------------------------
 
