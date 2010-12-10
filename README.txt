@@ -35,10 +35,21 @@ keys are pressed, assign all of the keys an amplitude envelope, and add
 tremolo, ring modulation, and vibrato effects.
 
 
+Installation / Uninstallation
+-----------------------------
+
+To install Cutupsampler, simply drag the application (Cutupsampler.app) to
+wherever you want to keep it.
+
+To uninstall, drag Cutupsampler.app to your Trash, as well as the folder named
+"Cutupsampler Preferences Folder" inside of Library/Preferences, under your home
+folder.
+
+
 Copyright and License
 ---------------------
 
-Copyright © 2010 Mark Breedlove <http://www.markbreedlove.com>
+Copyright (C) 2010 Mark Breedlove <http://www.markbreedlove.com>
 Please see License.txt for license terms and conditions.
 
 This program is free software: you can redistribute it and/or modify
