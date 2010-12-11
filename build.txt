@@ -1,3 +1,4 @@
 open thispatcher
-include FULL_PATH_TO/Cutupsampler/onoff_button.png
 appicon FULL_PATH_TO/Cutupsampler/Cutupsampler.icns
+include FULL_PATH_TO/Cutupsampler/onoff_button.png
+include FULL_PATH_TO/midityping/keymaps/midityping-keymap-US.txt
