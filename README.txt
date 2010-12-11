@@ -9,7 +9,7 @@ and maps the various cuts to keys on a MIDI keyboard or computer keyboard.
 Whereas most samplers are concerned with playing a particular sample at
 musical pitches on the keyboard, or playing discrete samples that are mapped
 individually to specific keys, Cutupsampler's approach is to divide a single
-sound among multiple keys — fracturing the original sound, without any
+sound among multiple keys - fracturing the original sound, without any
 attempt to transpose the cuts to musical pitches.
 
 When you load a sound into Cutupsampler, it slices the sound up into a
