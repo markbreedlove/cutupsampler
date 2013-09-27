@@ -16,6 +16,9 @@ The file build.txt should be loaded when building the application.
 Edit the file paths so that they contain the full paths to the referenced
 files on your system.
 
+The distributed file, build.txt.dist, must be renamed to build.txt and
+edited with the paths on your filesystem.
+
 
 Support folder
 --------------
