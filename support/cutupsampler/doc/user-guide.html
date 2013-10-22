@@ -19,149 +19,148 @@
   </div>
 <div id="node-28" class="section-4">
   <h2 class="book-heading">Quick Start</h2>
-  	<ol>
-		<li><em>If</em> you're using a MIDI controller (e.g. keyboard or
-		other such device):
-		<ol>
-			<li>Select an appropriate device from the "MIDI dev" menu.</li>
-			<li>Select the MIDI channel on which the device will be
-			transmitting, from the "MIDI ch" box.</li>
-			<li>Adjust "# keys" to cut the audio sample file up into more or
-			fewer chunks. each chunk will be mapped to a key/note of the MIDI
-			controller. Adjust "low key" to define the key to use as the start of
-			the total, overall sample.</li>
-		</ol>
-		</li>
-		<li><em>If</em> you want to use the computer keyboard:
-		<ol>
-			<li>In the "controller" panel, select "computer kbd".</li>
-		</ol>
-		</li>
-		<li>Select an appropriate audio output device from the "audio out"
-		box.</li>
-		<li>Click "load sound file" and select a WAV or AIFF audio file.</li>
-		<li>Play!</li>
-	</ol>
+
+<ol>
+<li><em>If</em> you're using a MIDI controller (e.g. keyboard or
+other such device):
+<ol>
+<li>Select an appropriate device from the "MIDI dev" menu.</li>
+<li>Select the MIDI channel on which the device will be
+transmitting, from the "MIDI ch" box.</li>
+<li>Adjust "# keys" to cut the audio sample file up into more or
+fewer chunks. each chunk will be mapped to a key/note of the MIDI
+controller. Adjust "low key" to define the key to use as the start of
+the total, overall sample.</li>
+</ol>
+</li>
+<li><em>If</em> you want to use the computer keyboard:
+<ol>
+<li>In the "controller" panel, select "computer kbd".</li>
+<li>Optionally, select your locale in the "Keyboard" menu.</li>
+</ol>
+</li>
+<li>If you have an Echo Nest API key, select "Analyzer" and "Echo Nest API
+key ..." from the menu and enter it.</li>
+<li>Select an appropriate audio output device from the "audio out"
+box.</li>
+<li>Click "load sound file" and select a WAV or AIFF audio file.</li>
+<li>Click one of the buttons for the type of cutup to perform (even, bars, beats,
+segments) and click "analyze." Bars, beats, and segments are only available
+if you have an Echo Nest API key.</li>
+<li>Play!</li>
+</ol>
+
   </div>
 <div id="node-29" class="section-4">
   <h2 class="book-heading">MIDI Control</h2>
-  <p>Cutupsampler can be played with a MIDI keyboard or other controller that sends MIDI note information; or can receive MIDI note information from another program, such as a sequencer.  The prerequisite for using MIDI control in either of these ways is having your system configured ahead of time to recognize your MIDI interface and MIDI controler &mdash; doing so is beyond the scope of this documentation.  However, once this has been set up, you will find that you can use the "MIDI dev" dropdown box at the top of Cutupsampler's window to select the appropriate MIDI interface, to which your keyboard or control surface is connected.  The list of devices are those that are presented by the OS X Core Audio MIDI drivers on your system.</p>
-<p>Cutupsampler recognizes MIDI note and note off (velocity 0) messages.  (Except for note-offs, velocity is ignored.)</p>
+
+<p>Cutupsampler can be played with a MIDI keyboard, controller, or sequencer. Use the "MIDI dev" dropdown box at the top of Cutupsampler's window to select the appropriate MIDI interface.</p>
+<p>Cutupsampler recognizes MIDI note and note off (velocity 0) messages. (Except for note-offs, velocity is ignored.)</p>
 <p>Cutupsampler also allows you to control the following parameters by assigning them to whatever MIDI Control Change (CC) numbers you like:</p>
 <ul>
-<li>Direction.  (Default CC#:  29).  Toggle switch:  127 = on, 0 = off.</li>
-<li>Tremolo / ring modulation rate.  (Default CC#: 22).  0 &mdash; 127.</li>
-<li>Tremolo / ring modulation depth.  (Default CC#: 23).  0 &mdash; 127.</li>
-<li>Vibrato rate.  (Default CC#: 1, i.e. mod wheel).  0 &mdash; 127.</li>
-<li>Vibrato depth.  (Default CC#: 13).  0 &mdash; 127.</li>
+<li>Direction. (Default CC#: 29). Toggle switch: 127 = on, 0 = off.</li>
+<li>Tremolo / ring modulation rate. (Default CC#: 22). 0 — 127.</li>
+<li>Tremolo / ring modulation depth. (Default CC#: 23). 0 — 127.</li>
+<li>Vibrato rate. (Default CC#: 1, i.e. mod wheel). 0 — 127.</li>
+<li>Vibrato depth. (Default CC#: 13). 0 — 127.</li>
 </ul>
-<p>To control any of the aforementioned parameters over MIDI, configure your controller to transmit one of its controllers via a particular CC number, and then enter that number in the relevant number box in Cutupsampler's interface.</p>
-<p>Cutupsampler's "speed" dial is linked to the MIDI pitch bend controller.</p>
+<p>To control any of these parameters over MIDI, configure your controller to transmit one of its controllers via a particular CC number, and then enter that number in the relevant number box in Cutupsampler's interface.</p>
+<p>Cutupsampler's <a href="/cutupsampler/documentation/user-guide-10/parameters">"speed" dial</a> is linked to the MIDI pitch bend controller.</p>
 <h3>Sequencer control</h3>
-<p>As mentioned above, you can set Cutupsampler to listen on any of the MIDI devices that are presented by Core Audio's MIDI drivers.  With Cutupsampler listening on a particular channel of one of these devices, it can be controlled by a sequencer (either hardware of software) that is transmitting on that channel.</p>
-<p>Cutupsampler can also be controlled by a ReWire-enabled application.  To use MIDI control through ReWire's virtual MIDI interface, first start the ReWire host application, and then start Cutupsampler.  You should notice a device in the "MIDI dev" box named "ReWire 1" (or something similar).  Your host application, in whatever parameter is relevant for selecting a MIDI "out" destination, should have an option that is labeled in a similar fashion.</p>
-<p>The various options that you may have available to you depends on the particular software that you are using, but, generally speaking, Cutupsampler's "MIDI dev" box should have a ReWire-related option in the same way that its "audio out" box should have an "ad_rewire" option.  If you have trouble either getting your host application to recognize Cutupsampler or vice-versa, experiment with the order in which you start the applications.  The first time you use Cutupsampler with a ReWire host, you may need to try running both of them together, then closing both of them, then opening them back up again.</p>
+<p>Cutupsampler can be controlled by a ReWire-enabled application. To use MIDI control through ReWire's virtual MIDI interface, first start the ReWire host application, and then start Cutupsampler. You should notice a device in the "MIDI dev" box named "ReWire 1" (or something similar).</p>
+<p>The various options that you may have available to you depends on the particular software that you are using, but, generally speaking, Cutupsampler's "MIDI dev" box should have a ReWire-related option in the same way that its "audio out" box should have an "ad_rewire" option. If you have trouble either getting your host application to recognize Cutupsampler or vice-versa, experiment with the order in which you start the applications. The first time you use Cutupsampler with a ReWire host, you may need to try running both of them together, then closing both of them, then opening them back up again.</p>
+
+
   </div>
 <div id="node-30" class="section-4">
   <h2 class="book-heading">Computer Keyboard Control</h2>
-  <p>As a convenience for users who do not have a MIDI keyboard or control surface, or for whom attaching such a device is inconvenient, Cutupsampler can be controlled with the computer's keyboard.</p>
 
-<p>Since Cutupsampler is not a traditional musical instrument and has no real notion of playing musical "notes," the computer keyboard will not emulate a clavier keyboard; in other words, there are no black and white keys.  Instead, the keyboard's alphabetic keys form a sequence running from left to right, top to bottom.  On an English-language keyboard, this means Q-W-E-R-T-Y ... ending with B-N-M.  In computer-keyboard-control mode, the sound sample is cut up into 26 segments, and each key plays one of them, starting with Q, ending with M.</p>
-
-<p>To make Cutupsampler pay attention to the computer keyboard instead of a MIDI controller, select the "computer kbd" button in the top part of Cutupsampler's interface.  With keyboard control activated, the sound sample is initially divided into 26 cuts.  To reduce the number of cuts and assign them to fewer keys, change the "keys" number box.  The cuts will still be distributed in sequence, left to right, top to bottom; but keys after the selected number will be ignored.</p>
-	
+<p>Cutupsampler can be controlled with the computer's keyboard.</p>
+<p>Cutupsampler is not a traditional musical instrument and has no real notion of playing musical "notes," so the computer keyboard doesn't emulate a clavier keyboard, with black and white keys. Instead, the keys go in a sequence running from left to right, top to bottom.</p>
+<p>To use the computer keyboard instead of a MIDI controller, select the "computer kbd" button in the top part of Cutupsampler's interface. With keyboard control activated, the sound sample is initially divided into 26 cuts. To reduce the number of cuts and assign them to fewer keys, change the "keys" number box. The cuts will still be distributed in sequence, left to right, top to bottom. Keys after the selected number will just repeat the sequence.</p>
+<p>Use the "Keyboard" menu to select your locale, if you have a non-US or UK keyboard. (At the moment, there are options for DE and FR, but if you express an interest in seeing more mappings, I can add them.)</p>
 <p>When computer keyboard control is active, the "low key" box becomes irrelevant and is disabled.</p>
-
-<p>The disadvantage of controlling Cutupsampler through the computer keyboard is that the keyboard's circuitry is not made for musical applications and is not designed to handle as many multiple simultaneous key presses as a musical controller.  You may find that notes "stick" using the computer keyboard, and you will find that you can only play six simultaneous "notes" at once, as opposed to 16 when using MIDI control.</p>
-
+<p>The disadvantage of controlling Cutupsampler through the computer keyboard is that the keyboard's circuitry is not made for musical applications and is not designed to handle as many multiple simultaneous key presses as a musical controller. You may find that notes "stick" using the computer keyboard, and you will find that you can only play six simultaneous "notes" at once, as opposed to 16 when using MIDI control.</p>
 <p>If you find that notes stick when using the computer keyboard, you can use the space bar at any time to stop notes that are still playing.</p>
+<p>There is a known problem with keys sticking or not being recognized while the mouse is being used at the same time to click and drag dials on the user interface. This is covered on the <a href="/cutupsampler/documentation/user-guide-10/known-issues">Known Issues</a> page.</p>
+<p>Caps Lock must be off for keyboard control to work.</p>
 
-<p>There is a known problem with keys sticking or not being recognized while the mouse is being used at the same time to click and drag dials on the user interface.  This is covered on the Known Issues page.</p>
-
-<h3>Non-QWERTY keyboards</h3>
-
-<p>As of version 1.0, Cutupsampler is limited in functionality to keyboards with a QWERTY layout, meaning, effectively, those designed for the English language.  A future version will probably contain support for some other keyboard layouts.</p>
-  </div>
+</div>
 <div id="node-38" class="section-4">
   <h2 class="book-heading">Menus</h2>
-  <p>Most of the menu items in Cutupsampler's menu bar are pretty standard for Mac applications, but here is an explanation of the ones that are not.</p>
 
-<p>The <strong>File</strong> menu and its subordinate items (New, Open, Save, and Save As) are unimplemented in the current version of Cutupsampler.</p>
-
-<p>In the <strong>Edit</strong> menu, likewise, most of the items are unimplemented.  The exception is <strong>Overdrive</strong>.  Overdrive should normally be left in its default selected state.  This option causes Cutupsampler to schedule audio-related computational tasks (such as producing sound and listening for MIDI notes) at higher priority than tasks that re-draw the graphical user interface.</p>
-
+<p>Most of the menu items in Cutupsampler's menu bar are pretty standard for Mac applications, but here is an explanation of the ones that are not.</p>
+<p>The <strong>File</strong> menu and its items (New, Open, Save, and Save As) are unimplemented.</p>
+<p>Most of the items in the <strong>Edit</strong> menu are also unimplemented. The exception is <strong>Overdrive</strong>. Overdrive should normally be left in its default selected state. This option causes Cutupsampler to schedule audio-related computational tasks (such as producing sound and listening for MIDI notes) at higher priority than tasks that redraw the user interface.</p>
+<p><strong>Keyboard</strong> allows you to select your locale for determining how your computer keyboard gets mapped to notes.</p>
+<p><strong>Analyzer</strong> has one option at the moment, <strong>Echo Nest API Key</strong>, for entering your API key, in order to have access to the bars, beats, and segments analyses.</p>
 <p>In the <strong>Documentation</strong> menu, <strong>User Guide</strong> will start your web browser and open Cutupsampler's local HTML documentation, which is stored with the application; and <strong>Cutupsampler Website</strong> will send you to the main page of the program's website.</p>
+<p>In <strong>Updates</strong>, <strong>Cutupsampler Website Downloads</strong> will take you to the page for downloading the most recent update of the application.</p>
+<p>The <strong>Help</strong> menu is not implemented. </p>
 
-<p>In <strong>Updates</strong>, <strong>Cutupsampler Website Downloads</strong> will take you to the page on the Cutupsampler website for downloading the most recent update of the application.</p>
-
-<p>Please note that the <strong>Help</strong> menu is not implemented. </p>
   </div>
 <div id="node-39" class="section-4">
   <h2 class="book-heading">Parameters</h2>
-  <p>Cutupsampler has a number of controls that let you shape its sound, organized into the following groups:</p>
 
+<p>Cutupsampler has a number of controls that let you shape its sound, organized into the following groups:</p>
 <dl>
-
-  <dt>Keys &amp; low key</dt>
-  <dd>The "keys" box controls the number of cuts that Cutupsampler makes to the sound file &mdash; and, as a result, the number of keys that are recognized during performance.  The "low key" box indicates, on a MIDI keyboard, which is the lowest key in the range.  It's not relevant when Cutupsampler is in computer-keyboard mode.</dd>
-
-  <dt>Speed</dt>
-  <dd>The Speed dial controls Cutupsampler's playback speed.  It is linked to the MIDI pitch bend controller.</dd>
-
-  <dt>Direction</dt>
-  <dd>The "forward" and "reverse" buttons toggle playback between forward and reverse modes.  This toggle is linked to the MIDI controller specified in the adjacent "cc#" box.  The "loop" checkbox turns on looping of each note.</dd>
-
-  <dt>Envelope</dt>
-  <dd>The envelope graph controls each note's amplitude envelope.  It is not applied when Cutupsampler has looping enabled (see above).  Use the mouse to drag points around in the envelope graph to change the shape of the envelope.  Click any place to add a point where none exist yet, and shift-click any existing point to remove it.</dd>
-
-  <dt>Tremolo and Ring Modulation</dt>
-  <dd>Tremolo is the sinusoidal fluctuation of signal amplitude at a sub-audio frequency (for example, a fluctuation at 8 Hz), and ring modulation is the same thing, but at an audio frequency.  RIng modulation causes overtones to be added to the carrier signal.  The rate dial in this group controls the tremolo rate, from 1 to 500 cycles per second (scaled exponentially), and the depth dial controls the amount of attenuation, from 0 to 100 percent of the signal level.  The "cc" boxes below the rate and depth dials govern which MIDI controllers are linked to these parameters.</dd>
-
-  <dt>Vibrato</dt>
-  <dd>Vibrato is the sinusoidal fluctuation of pitch.  The "rate" dial controls the rate of variation, from 0 to 8 cycles per second, and the "depth" dial controls the depth of pitch change, from 0 to 12 semitones.  As noted above, there are "cc" boxes below these dials that allow them to be linked to MIDI controllers.  The default for vibrato rate is the mod wheel.</dd>
-
+<dt>Keys &amp; low key</dt>
+<dd>The "keys" box controls the number of cuts that Cutupsampler makes to the sound file — and, as a result, the number of keys that are recognized during performance. The "low key" box indicates, on a MIDI keyboard, which is the lowest key in the range. It's not relevant when Cutupsampler is in computer-keyboard mode.</dd>
+<dt>Speed</dt>
+<dd>The Speed dial controls Cutupsampler's playback speed. It is linked to the <a href="/cutupsampler/documentation/user-guide-10/midi-control">MIDI pitch bend controller</a>.</dd>
+<dt>Direction</dt>
+<dd>The "forward" and "reverse" buttons toggle playback between forward and reverse modes. This toggle is linked to the <a href="/cutupsampler/documentation/user-guide-10/midi-control">MIDI controller</a> specified in the adjacent "cc#" box. The "loop" checkbox turns on looping of each note.</dd>
+<dt>Envelope</dt>
+<dd>The envelope graph controls each note's amplitude envelope. It is not applied when Cutupsampler has looping enabled (see above). Use the mouse to drag points around in the envelope graph to change the shape of the envelope. Click any place to add a point where none exist yet, and shift-click any existing point to remove it.</dd>
+<dt>Analysis type</dt>
+<dd>The "Analyze" button and the radio buttons below it cause different types of cuts to be performed on the audio sample. You need to have an Echo Nest API key configured for "bars," "beats," and "segments" to be available. After selecting a new type, click "analyze" to go ahead with the analysis. If you're using one of the Echo Nest analysis types, and you haven't analyzed the particular audio file before, there will be a delay while the file is uploaded to Echo Nest and analyzed. You will then have to click "analyze" again after some time to actually load the analysis again. This is something that I'll have straightened out before I take Cutupsampler out of beta.</dd>
+<dt>Tremolo and Ring Modulation</dt>
+<dd>Tremolo is the sinusoidal fluctuation of signal amplitude at a sub-audio frequency (for example, a fluctuation at 8 Hz), and ring modulation is the same thing, but at an audio frequency. Ring modulation causes overtones to be added to the carrier signal. The rate dial in this group controls the tremolo rate, from 1 to 500 cycles per second (scaled exponentially), and the depth dial controls the amount of attenuation, from 0 to 100 percent of the signal level. The "cc" boxes below the rate and depth dials govern which <a href="/cutupsampler/documentation/user-guide-10/midi-control">MIDI controllers</a> are linked to these parameters.</dd>
+<dt>Vibrato</dt>
+<dd>Vibrato is the sinusoidal fluctuation of pitch. The "rate" dial controls the rate of variation, from 0 to 8 cycles per second, and the "depth" dial controls the depth of pitch change, from 0 to 12 semitones. As noted above, there are "cc" boxes below these dials that allow them to be linked to <a href="/cutupsampler/documentation/user-guide-10/midi-control">MIDI controllers</a>. The default for vibrato rate is the mod wheel.</dd>
 </dl>
-  </div>
+
+</div>
 <div id="node-35" class="section-4">
   <h2 class="book-heading">Recording</h2>
-  <p>If you want to record what you play with Cutupsampler, you can do so by directing its audio output into another application that is capable of audio recording.</p>
-
+  
+<p>If you want to record what you play with Cutupsampler, you can direct its audio output into another application that is capable of audio recording.</p>
 <h3>ReWire</h3>
-
-<p>Cutupsampler works with applications that support ReWire.  To use Cutupsampler as a ReWire client, choose "ad_rewire" from the "audio out" menu.  In your host application's list of ReWire clients, you should see an entry labeled "Cutupsampler".</p>
-
-<p>The first time you use Cutupsampler as a ReWire client, start Cutupsampler first, then start the ReWire host.  This allows the ReWire host to recognize Cutupsampler and register it in your computer's list of known ReWire clients.  Next, close both programs and open the ReWire host; then, open Cutupsampler.  This allows Cutupsampler to recognize the ReWire MIDI device, for sending messages from the host to Cutupsampler.</p>
-
+<p>Cutupsampler works with applications that support ReWire. To use Cutupsampler as a ReWire client, choose "ad_rewire" from the "audio out" menu. In your host application's list of ReWire clients, you should see an entry labeled "Cutupsampler".</p>
+<p>The first time you use Cutupsampler as a ReWire client, start Cutupsampler first, then start the ReWire host. This allows the ReWire host to recognize Cutupsampler and register it in your computer's list of known ReWire clients. Next, close both programs and open the ReWire host; then, open Cutupsampler. This allows Cutupsampler to recognize the ReWire MIDI device, for sending messages from the host to Cutupsampler.</p>
 <p>More information on ReWire:</p>
-
 <ul>
-<li>Propellerhead Software:  What is ReWire?</li>
-<li>Wikipedia article on ReWire</li>
+<li><a href="http://www.propellerheads.se/products/reason/index.cfm?fuseaction=get_article&amp;article=rewire">Propellerhead Software: What is ReWire?</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ReWire">Wikipedia article on ReWire</a></li>
 </ul>
-
 <h3>Soundflower</h3>
+<p><a href="http://cycling74.com/products/soundflower/">Soundflower</a> is a free Mac OS X program by Cycling74 that allows you to route audio easily from one application to another. See <a href="http://cycling74.com/products/soundflower/">Cycling74's website</a> for details. If you are unable to, or do not wish to use ReWire then I would suggest Soundflower as an alternative for recording. With Soundflower installed, you can set Cutupsampler's "audio out" box to "CoreAudio Soundflower (2ch)" and set your recording software to use the same virtual device as its input.</p>
 
-<p>Soundflower is a free Mac OS X program by Cycling74 that allows you to route audio easily from one application to another.  See Cycling74's website for details.  If you are unable to, or do not wish to use ReWire then I would suggest Soundflower as an alternative for recording the sounds that you make with Cutupsampler.  With Soundflower installed, you would set Cutupsampler's "audio out" box to "CoreAudio Soundflower (2ch)" and set your recording software to use the same virtual device as its input.</p>
-  </div>
+</div>
 <div id="node-33" class="section-4">
   <h2 class="book-heading">System Requirements</h2>
-  <h3>Version 1.0 beta 1</h3>
 
-<p>An Apple Macintosh system running OS X 10.4 or greater.</p>
-  </div>
+      <h3>Version 1.0 binary</h3>
+      <p>Requires OS X 10.6 or greater.  (Untested on earlier versions.)</p>
+      <h3>Source</h3>
+      <p>See <a href="https://github.com/markbreedlove/">my GitHub repositories</a>. You'll need Max 6.</p>
+
+</div>
 <div id="node-31" class="section-4">
   <h2 class="book-heading">Known Issues</h2>
-  
-<h3>Stuck notes when using computer keyboard control</h3>
 
-<p>You may find, when using the computer keyboard to control Cutupsampler, that some notes will "stick" &mdash; that is, will not stop when you release their keys &mdash; when you play a number of keys at a time.  You will also find that Cutupsampler seems not to recognize key-presses as well when you are simultaneously using the mouse to manipulate the dials.  The stuck-keys phenomenon is also more likely to happen when you are simultaneously moving the dials.</p>
+      <h3>Stuck notes when using computer keyboard control</h3>
+      <p>You may find, when <a href="/cutupsampler/documentation/user-guide-10/computer-keyboard-control">using the computer keyboard to control Cutupsampler</a>, that some notes will "stick" — that is, will not stop when you release their keys — when you play a number of keys at a time. You will also find that Cutupsampler seems not to recognize key-presses as well when you are simultaneously using the mouse to manipulate the dials. The stuck-keys phenomenon is also more likely to happen when you are simultaneously moving the dials.</p>
+      <p>This is a known problem that is believed to be caused by OS X's key event implementation, according to <a href="http://cycling74.com/forums/topic.php?id=18925">a post by one of Max/MSP's programmers</a> on the Cycling74 forum. (Cutupsampler was created with Max/MSP.) There does not appear to be any remedy for this issue as of this writing (November, 2010). The aforementioned forum post says that the problem appears with OS X 10.6.1 (Snow Leopard), but I have also encountered it on 10.4.11, as well.</p>
+      <p>As mentioned in the <a href="/cutupsampler/documentation/user-guide-10/computer-keyboard-control">section on computer keyboard control</a>, you can use the space bar to stop notes that are being held.</p>
+      <p>On a related note, the computer keyboard only allows for six keys to be played at once. I think that this may be due to the general design of a computer keyboard's circuitry; in any case, whether it's that or OS X, it is a minor limitation without any apparent workaround.</p>
+      <h3>Analysis delay</h3>
+      <p>I still need to smooth out the process of analyzing files with the Echo Nest API. With a new file that they haven't seen yet, you have to click "analyze," wait for it to be analyzed, then click "analyze" again to fetch the actual analysis. This will be addressed by the time I stop calling Cutupsampler "beta."</p>
 
-<p>This is a known problem that is believed to be caused by OS X's key event implementation, according to a post by one of Max/MSP's programmers on the Cycling74 forum.  (Cutupsampler was created with Max/MSP.)  There does not appear to be any remedy for this issue as of this writing (November, 2010).  The aforementioned forum post says that the problem appears with OS X 10.6.1 (Snow Leopard), but I have also encountered it on 10.4.11 as well.</p>
 
-<p>As mentioned in the section on computer keyboard control, you can use the space bar to stop notes that are being held.</p>
-	
-<p>On a related note, the computer keyboard only allows for six keys to be played at once.  I think that this may be due to the general design of a computer keyboard's circuitry; in any case, whether it's that or OS X, it is a minor limitation without any apparent workaround.</p>
-  </div>
+</div>
+
+
 </div>
     </div></div>
   </body>
