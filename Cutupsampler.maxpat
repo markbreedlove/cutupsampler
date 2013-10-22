@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 131.0, 86.0, 1579.0, 1142.0 ],
+		"openrect" : [ 221.0, 123.0, 353.0, 480.0 ],
 		"bgcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -241,7 +241,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 1273.0, 691.0, 885.0, 647.0 ],
+						"rect" : [ 1280.0, 683.0, 885.0, 647.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -261,6 +261,25 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 449.0, 530.0, 155.0, 20.0 ],
+									"saved_object_attributes" : 									{
+										"filename" : "map_chunks_to_notes.js",
+										"parameter_enable" : 0
+									}
+,
+									"text" : "js map_chunks_to_notes.js"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -535,25 +554,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 692.428589, 417.0, 68.0, 20.0 ],
 									"text" : "r numKeys"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 449.0, 525.0, 151.0, 20.0 ],
-									"saved_object_attributes" : 									{
-										"filename" : "map_chunks_to_keys.js",
-										"parameter_enable" : 0
-									}
-,
-									"text" : "js map_chunks_to_keys.js"
 								}
 
 							}
@@ -930,7 +930,7 @@
 			}
 , 			{
 				"box" : 				{
-					"disabled" : [ 0, 1, 1, 1 ],
+					"disabled" : [ 0, 0, 0, 0 ],
 					"id" : "obj-186",
 					"itemtype" : 0,
 					"maxclass" : "radiogroup",
@@ -942,7 +942,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 120.0, 183.0, 18.0, 66.0 ],
 					"size" : 4,
-					"value" : 0,
+					"value" : 1,
 					"varname" : "chunkTypeButtons"
 				}
 
@@ -983,7 +983,6 @@
 			}
 , 			{
 				"box" : 				{
-					"active" : 0,
 					"bgcolor" : [ 0.501961, 0.717647, 0.764706, 1.0 ],
 					"bgoncolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
 					"bgovercolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
@@ -1910,7 +1909,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 80.0, 58.235699, 30.0 ],
 					"size" : 2,
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -1968,7 +1967,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -2196,9 +2194,9 @@
 											"architecture" : "x86"
 										}
 ,
-										"rect" : [ 437.0, 59.0, 280.0, 405.0 ],
+										"openrect" : [ 184.0, 177.0, 280.0, 405.0 ],
 										"bglocked" : 0,
-										"openinpresentation" : 0,
+										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
 										"default_fontface" : 0,
 										"default_fontname" : "Arial",
@@ -2209,8 +2207,8 @@
 										"toolbarvisible" : 1,
 										"boxanimatetime" : 200,
 										"imprint" : 0,
-										"enablehscroll" : 1,
-										"enablevscroll" : 1,
+										"enablehscroll" : 0,
+										"enablevscroll" : 0,
 										"devicewidth" : 0.0,
 										"description" : "",
 										"digest" : "",
@@ -2412,9 +2410,10 @@
 											"architecture" : "x86"
 										}
 ,
-										"rect" : [ 1572.0, 60.0, 209.0, 103.0 ],
+										"openrect" : [ 410.0, 100.0, 254.0, 138.0 ],
+										"bgcolor" : [ 0.761275, 0.761421, 0.76125, 1.0 ],
 										"bglocked" : 0,
-										"openinpresentation" : 0,
+										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
 										"default_fontface" : 0,
 										"default_fontname" : "Arial",
@@ -2432,8 +2431,39 @@
 										"digest" : "",
 										"tags" : "",
 										"title" : "Echo Nest API Key",
-										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 10.0,
+													"frgb" : 0.0,
+													"id" : "obj-12",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 35.0, 259.0, 217.0, 18.0 ],
+													"presentation" : 1,
+													"presentation_rect" : [ 12.0, 81.0, 221.0, 18.0 ],
+													"text" : "http://developer.echonest.com/account/register"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 10.0,
+													"frgb" : 0.0,
+													"id" : "obj-9",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 35.0, 288.0, 217.0, 18.0 ],
+													"presentation" : 1,
+													"presentation_rect" : [ 12.0, 99.0, 174.0, 18.0 ],
+													"text" : "http://developer.echonest.com/terms"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -2530,7 +2560,8 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 122.0, 87.0, 174.0, 28.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 12.0, 34.0, 174.0, 28.0 ],
+													"presentation_rect" : [ 12.0, 34.0, 221.0, 28.0 ],
+													"text" : "P9EUMSORZOQFVBDI7",
 													"varname" : "en_api_key_input",
 													"wordwrap" : 0
 												}
@@ -3792,7 +3823,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 125.0, 305.0, 18.0, 30.0 ],
 					"size" : 2,
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -4240,9 +4271,9 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 13.748214, 1.0, 0, 64.024101, 1.0, 0, 131.787247, 0.861151, 0, 206.108124, 1.0, 0, 246.0, 0.000559, 0 ],
+					"addpoints" : [ 0.0, 0.0, 0, 0.0, 1.0, 0, 281.0, 1.0, 0, 281.0, 0.0, 0, 281.0, 0.000559, 0 ],
 					"bgcolor" : [ 0.909804, 0.909804, 0.909804, 1.0 ],
-					"domain" : 246.0,
+					"domain" : 281.0,
 					"hint" : "Drag points.  Click to create new points.  Shift-click to erase them.",
 					"id" : "obj-55",
 					"linecolor" : [ 0.52549, 0.141176, 0.141176, 1.0 ],
@@ -5384,7 +5415,6 @@
 			}
 , 			{
 				"box" : 				{
-					"cantchange" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"format" : 4,
@@ -5408,7 +5438,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-24",
 					"maxclass" : "number",
-					"maximum" : 26,
+					"maximum" : 88,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -5474,7 +5504,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-10",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver IAC Bus 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver IAC Bus 1", ",", "FireWire 1814", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7225,7 +7255,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "map_chunks_to_keys.js",
+				"name" : "map_chunks_to_notes.js",
 				"bootpath" : "/Volumes/Users/mark/Max_MSP/Cutupsampler",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
