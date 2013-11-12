@@ -47,10 +47,10 @@ named "Cutupsampler Preferences Folder" inside of Library/Preferences,
 under your home folder.
 
 
-Copyright and License
----------------------
+Copyright and Licenses
+----------------------
 
-Copyright (C) 2010 Mark Breedlove <http://www.markbreedlove.com>
+Copyright (C) 2013 Mark Breedlove <http://www.markbreedlove.com>
 Please see License.txt for license terms and conditions.
 
 This program is free software: you can redistribute it and/or modify
@@ -66,6 +66,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program, in License.txt.  If not, see
 <http://www.gnu.org/licenses/>.
+
+This software incorporates the MSP en_analyzer~ object, which is
+copyright by Echo Nest Corporation.  Please see the file named
+License-en_analyzer.txt, included alongside this file.
 
 
 Contact
