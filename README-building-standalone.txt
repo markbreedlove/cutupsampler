@@ -4,9 +4,8 @@ Building Cutupsampler as a standalone in Max/MSP
 General requirements
 --------------------
 
-You need the midityping.maxpat patcher and its 'keymaps' folder within
-your Max/MSP search path.  As of version 1.0, this is included in the
-source zip file.
+You need the midityping.maxpat patcher within your Max/MSP search path.
+As of version 1.0, this is included in the source zip file.
 
 
 Build script
