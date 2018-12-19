@@ -1,7 +1,7 @@
 
 Cutupsampler
-http://www.markbreedlove.com/cutupsampler
-=========================================
+http://www.markbreedlove.com/cutupsampler.html
+==============================================
 
 Cutupsampler is a program for Mac OS X that performs a cut-up of a sound file
 and maps the various cuts to keys on a MIDI keyboard or computer keyboard.
@@ -49,7 +49,7 @@ folder.
 Copyright and License
 ---------------------
 
-Copyright (C) 2010 Mark Breedlove <http://www.markbreedlove.com>
+Copyright (C) 2010-2018 Mark Breedlove <https://www.markbreedlove.com>
 Please see License.txt for license terms and conditions.
 
 This program is free software: you can redistribute it and/or modify
@@ -70,6 +70,4 @@ along with this program, in License.txt.  If not, see
 Contact
 -------
 
-http://www.markbreedlove.com/cutupsampler (Cutupsampler website)
-http://www.markbreedlove.com/contact (Contact the author)
-
+See https://www.markbreedlove.com/
